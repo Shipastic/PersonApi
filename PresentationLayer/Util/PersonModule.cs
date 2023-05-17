@@ -13,8 +13,6 @@ namespace SerializeAppForDigitSpace.PresentationLayer.Util
     {
         public override void Load()
         {
-            //Bind<IPersonService>().To<PersonService>();
-
             //Bind(Type.GetType("SerializeAppForDigitSpace.BusinessLayer.Interfaces.IPersonService, SerializeAppForDigitSpace.BusinessLayer.Service.PersonService")).ToSelf().InSingletonScope();
             Bind(typeof(IPersonService)).To(typeof(PersonService)).InSingletonScope();
         }
