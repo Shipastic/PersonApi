@@ -195,12 +195,8 @@ namespace SerializeAppForDigitSpace.PresentationLayer
         /// </summary>
         public void Dispose()
         {
-            //List<PersonDTO> personDTOs = personService.GetPersonDTOs().ToList();
-
-            //personDTOs.Clear();
             Dispose(true);
             GC.SuppressFinalize(this);
-           // Console.WriteLine("Коллекция очищена!");
         }
 
         protected virtual void Dispose(bool disposing)
